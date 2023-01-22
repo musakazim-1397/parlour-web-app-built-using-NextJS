@@ -1,0 +1,161 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.priceRotatedTitle{
+    position: absolute;
+    top: 50%;
+    left: -2%;
+    transform: rotate(-90deg);
+    color: #c52440;
+    text-transform: uppercase;
+}
+.title{
+    font-size: 4rem;
+    margin: 0;
+}
+
+.mainHeading{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 80%;
+}
+
+.subHeading{
+    font-size: 14px;
+    color: #c52440;
+    text-transform: uppercase;
+
+}
+.heading{
+    color: white;
+    margin-top: 0.2rem;
+}
+
+.priceContent{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.priceContainer{
+    background: white;
+    border-radius: 50%;
+    padding: 1rem;
+    flex-direction: column;
+    min-width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemCategory{
+    margin: 0.2rem 0;
+    color: #c52440;
+}
+
+.priceAndDollarSignContainer{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.dollarsign{
+    position: absolute;
+    font-size: 15px;
+    top: 20%;
+    left: -17%;
+    margin: 0;
+    color: black;
+}
+
+.price{
+    margin: 0.1rem 0 0.2rem 0;
+    color: black;
+    font-size: 2.5rem;
+}
+
+.itemsList{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.listItem{
+    color: grey;
+    font-size: 12px;
+    margin: 0;
+}
+
+.strikethroughListItem{
+    text-decoration: line-through;
+}
+
+@media screen and (max-width:900px) {
+    .priceRotatedTitle{
+        left: -11%;
+    }
+    .mainHeading{
+        max-width: 69%;
+    }
+}
+@media screen and (max-width:855px) {
+
+    .mainHeading{
+        max-width: 30rem;
+    }
+}
+
+@media screen and (max-width:710px) {
+    .priceRotatedTitle{
+        left:-15%;   
+    }
+}
+
+@media screen and (max-width:650px) {
+    .container{
+        height: max-content;
+        padding: 2rem 0;
+    }
+    .priceRotatedTitle{
+        position: static;
+        transform: none;
+        margin: 2rem 0;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .mainHeading{
+        max-width: 24rem;
+    }
+    .mainHeading h1{
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width:470px) {
+    .mainHeading{
+        margin: 2rem 1rem;
+    }
+    .priceContent{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,54 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  overflow-x: clip;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+
+::-webkit-scrollbar{
+  width:9px; 
+}
+
+::-webkit-scrollbar-track{
+  background:transparent;
+  border: none;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 3px;
+  background:#c52440;
+  height: 6px;
+}
+
+::-webkit-progress-bar{
+  background-color: black;
+  border-radius: 15px;
+ 
+}
+
+::-webkit-progress-value{
+  background-color: white;
+  border-radius: 15px;
+}

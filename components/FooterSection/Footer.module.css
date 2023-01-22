@@ -1,0 +1,16 @@
+.container{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #0e0b0b;
+}
+
+.socialMediaIconsContainer{
+    display: flex;
+    max-width: 15rem;
+    align-items: center;
+    justify-content: space-between;
+    gap:1rem;
+}

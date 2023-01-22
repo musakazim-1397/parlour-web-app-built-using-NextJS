@@ -1,0 +1,146 @@
+.container{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: transparent;
+    position: relative;
+    overflow-x: clip;
+    z-index: 5;
+}
+
+.leftSide{
+    display: flex;
+    flex-direction: column;
+    max-width: 21rem;
+    margin-left: 10rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.mainHeading{
+    margin: 0.2rem 0;
+    color: white;
+    font-size: 3.2rem;
+    line-height: 1.1;
+}
+
+.subText{
+    margin: 0.3rem 0;
+    font-size: 14px;
+}
+
+.playBtn{
+    margin-top: 1.1rem;
+    width: 40px;
+    height: 35px;
+    position: relative;
+}
+
+.rightBottomSide{
+    position: absolute;
+    width: 40rem;
+    height: 13rem;
+    right: 0;
+    bottom: -12%;
+    background-color: #c52440;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-content: center;
+    justify-content: center;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    text-align: left;
+    margin: auto;
+    width: 9rem;
+}
+
+.col strong{
+    margin: 0 0 2px 0;
+}
+
+.col p{
+    margin: 0;
+}
+
+@media  screen and (max-width:1150px) {
+    .rightBottomSide{
+        width: 30rem;
+    }
+    .col p{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .leftSide{
+        margin-left: 5rem;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .leftSide{
+        margin-left: 2rem;
+    }
+    .mainHeading{
+        font-size: 2.8rem;
+    }
+
+    .rightBottomSide{
+        width: 25rem;
+    }
+    .col p{
+        font-size: 12px;
+    }
+    .col{
+        width: 5.9rem;
+    }
+}
+
+@media screen and (max-width:810px){
+    .container{
+        flex-direction: column;
+        height: max-content;
+        padding: 1rem 0;
+        justify-content: center;
+        align-items: center;
+        gap:3rem;
+    }
+
+    .leftSide{
+        margin-left: 0;
+        margin-top: 4.5rem;
+    }
+    .rightBottomSide{
+        position: static;
+    }
+    
+    .mainHeading{
+        font-size: 2.2rem;
+    }
+    .subText{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .rightBottomSide{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        padding: 8rem 0;
+        width: 20rem;
+    }
+    .col{
+        width: 7rem;
+    margin: 0.5rem 0;
+    justify-self: center;
+    }
+}

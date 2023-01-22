@@ -1,0 +1,9 @@
+.container {
+  width: 99vw;
+  overflow-x: clip;
+}
+
+.navAndHeroBackground{
+  background: url('/assets/home.png') no-repeat center center/cover;
+}
+

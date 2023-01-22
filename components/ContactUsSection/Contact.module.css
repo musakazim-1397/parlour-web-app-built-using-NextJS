@@ -1,0 +1,162 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}
+
+.contactRotatedTitle{
+    position: absolute;
+    top: 50%;
+    left: -2%;
+    transform: rotate(-90deg);
+    color: #c52440;
+    text-transform: uppercase;
+}
+.title{
+    font-size: 4rem;
+    margin: 0;
+}
+
+.leftSide{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 25rem;
+}
+
+.subHeading{
+    color: white;
+    font-size: 1rem;
+    margin: 0;
+}
+.heading{
+    color: #c52440;
+    margin: 0.2rem 0;
+}
+
+.qtnText, .furtherText{
+    color: grey;
+    font-size: 13px;
+}
+
+.address{
+    display: flex;
+    color: white;
+    margin: 0.4rem 0;
+}
+
+.addressDetail{
+    color: grey;
+    margin-left: 1rem;
+}
+
+.rightSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 35rem;
+    min-width: 25rem;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.input{
+    width: 100%;
+    padding: 0.7rem 0;
+    border: none;
+    border-bottom: 2px solid #c52440;
+    margin: 0.5rem 0;
+    background: transparent;
+
+}
+
+.input:focus, .textArea:focus{
+    outline: none;
+}
+
+.textArea{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #c52440;
+    background: transparent;
+    resize:none;
+}
+
+.input::-webkit-input-placeholder{
+    color: #c52440;
+}
+
+.textArea::-webkit-input-placeholder{
+    color: #c52440;
+}
+
+.btn{
+    margin-top: 1rem;
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid #c52440;
+    padding: 0.2rem 0;
+    color: #c52440;
+    outline: none;
+    transition: 0.3s ease-out;
+}
+
+.btn:hover{
+    background-color: #c52440;
+    color: black;
+}
+
+@media screen and (max-width:1250px) {
+    .contactRotatedTitle{
+        left:-10%;
+    }
+}
+@media screen and (max-width:1020px) {
+    .contactRotatedTitle{
+        left:-12.5%;
+    }
+}
+
+@media screen and (max-width:985px){
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: max-content;
+        padding: 2rem 0;
+    }
+    .contactRotatedTitle{
+        position: static;
+        transform: none;
+        margin: 2rem 0;
+    }
+}
+
+@media screen and (max-width:510px) {
+    .leftSide{
+        max-width: 19rem;
+
+    }
+    .rightSide{
+        min-width: 19rem;
+    }
+}
+@media screen and (max-width:380px) {
+    .leftSide{
+        padding: 0 0.8rem;
+    }
+    .rightSide{
+        padding: 0 0.5rem;
+    }
+}

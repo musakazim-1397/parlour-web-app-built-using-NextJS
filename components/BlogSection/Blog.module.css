@@ -1,0 +1,125 @@
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 2rem 0;
+}
+
+
+.blogRotatedTitle{
+    position: absolute;
+    top: 50%;
+    left: -2%;
+    transform: rotate(-90deg);
+    color: #c52440;
+    text-transform: uppercase;
+}
+.title{
+    font-size: 4rem;
+    margin: 0;
+}
+
+.blogContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.blog{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 16rem;
+}
+
+.blogImage{
+    width:100%;
+    height:10rem;
+    position: relative;
+}
+
+.blogInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #0c0a0a;
+    padding: 0.5rem;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    
+}
+
+.blogTitle{
+    color: #c52440;
+    text-transform: uppercase;
+}
+.blogSubTitle{
+    color:black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.description{
+    color:grey;
+    font-size: 13px;
+}
+
+.playBtn{
+    margin-top: 1.1rem;
+    width: 40px;
+    height: 35px;
+    position: relative;
+}
+
+@media screen and (max-width:1210px) {
+    .blogRotatedTitle{
+        left: -4%;
+    }
+}
+@media screen and (max-width:1150px) {
+    .blogRotatedTitle{
+        left: -5%;
+    }
+    .blogContent{
+        gap:1.5rem;
+    }
+}
+@media screen and (max-width:1010px) {
+  
+    .blogRotatedTitle{
+        left: -4.9%;
+    }
+
+    .title{
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width:960px) {
+   
+    .blogRotatedTitle{
+        left: -5%;
+    }
+
+}
+
+@media screen and (max-width:920px){
+    .container{
+        height: max-content;
+        flex-direction: column;
+    }
+    .blogContent{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:2.5rem;
+    }
+    .blogRotatedTitle{
+        position: static;
+        transform: none;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}

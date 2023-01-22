@@ -1,0 +1,133 @@
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.servicesHeadingContainer{
+    position: absolute;
+    top: 50%;
+    left: -2%;
+    transform: rotate(-90deg);
+    color: #c52440;
+    text-transform: uppercase;
+}
+.rotatedHeading{
+    font-size: 4rem;
+    margin: 0;
+}
+
+.servicesContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4.5rem;
+}
+
+.service{
+    display:flex;
+    flex-direction: column;
+    max-width: 12rem;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.service:nth-child(2){
+    background: #3a0707;
+}
+
+.serviceImageContainer{
+    position: relative;
+    width: 100px;
+    height: 110px;
+}
+
+.serviceTextContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    padding:0 1rem;
+}
+
+.serviceNumber{
+    font-size: 10px;
+    font-weight: bold;
+    margin: 0 0 -9px 0;
+
+}
+
+.serviceName{
+    margin: 0px 0 0rem 0;
+    color: #c52440;
+    font-size: 2.7rem;
+}
+
+.servicePara{
+    margin: 4rem 0 1rem 0;
+    color: grey;
+    font-size: 12px;
+
+}
+
+.playBtn{
+    margin-top: 1.1rem;
+    width: 40px;
+    height: 35px;
+    position: relative;
+}
+
+@media screen and (max-width:1150px) {
+    .servicesHeadingContainer{
+        left: -7%;
+    }
+}
+
+@media screen and (max-width:1040px){
+    .servicesContainer{
+        gap:2.5rem;
+    }
+    .servicesHeadingContainer{
+        left: -8%;
+    }
+}
+@media screen and (max-width:960px){
+    .servicesContainer{
+        gap: 0.7em;
+    }
+    .servicesHeadingContainer{
+        left: -11%;
+    }
+}
+@media screen and (max-width:960px){
+    .servicesHeadingContainer{
+        left: -13.5%;
+    }
+}
+
+@media screen and (max-width:790px){
+    .container{
+        flex-direction: column;
+        height: max-content;
+        padding: 1rem 0;
+    }
+    .servicesContainer{
+        flex-direction: column;
+        justify-content: center;
+        gap:3rem;
+    }
+    .servicesHeadingContainer{
+        position: static;
+        transform: none;
+        margin-top: 1.5rem;
+    }
+}
+
+@media screen and (max-width:505px) {
+    .rotatedHeading{
+        font-size: 3.2rem;
+    }
+}
